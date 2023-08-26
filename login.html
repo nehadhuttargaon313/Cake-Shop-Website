@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css//new.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light m-auto  ">
+
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Logo" style="height:50px; width: 70px;">
+                </a>
+
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Cakes Available.html">Cakes Available</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="speciality.html">Speciality</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="contactme.html">Contact Me </a>
+                        </li>
+
+
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+
+                        <button class="btn btn-outline-danger my-2 my-sm-0"> <a class="nav-link" href="login.html">Login<span class="sr-only">(current)</span></a></button>
+                    </form>
+                </div>
+
+
+        </div>
+        </nav>
+
+        </div>
+    </header>
+    <div class="ourbody">
+
+        <div class="form">
+
+            <form class="login-form" action="login.php" method="post">
+                <i class="fas fa-user-circle"></i>
+                <input class="user-input" type="text" name="username1" placeholder="Username" required>
+                <input class="user-input" type="password" name="password1" placeholder="Password" required>
+                <div class="options-01">
+                    <label class="remember-me " style="color: #080808;"><input type="checkbox" name="">Remember me</label>
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <input class="btn" type="submit" name="" value="LOGIN">
+                <div class="options-02">
+                    <p>Not Registered? <a href="#">Create an Account</a></p>
+                </div>
+            </form>
+
+            <form class="signup-form" action="signup1.php" method="post">
+                <i class="fas fa-user-plus"></i>
+                <input class="user-input" type="text" name="username1" placeholder="Username" required>
+                <input class="user-input" type="text" name="phone1" placeholder="Phone Number" required>
+                <input class="user-input" type="email" name="email1" placeholder="Email Address" required>
+                <input class="user-input" type="password" name="password1" placeholder="Password" required>
+                <input class="btn" type="submit" name="" value="SIGN UP">
+                <div class="options-02">
+                    <p>Already Registered? <a href="#">Sign In</a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.options-02 a').click(function() {
+            $('form').animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+        });
+    </script>
+
+</body>
+
+</html>
